@@ -18,8 +18,7 @@ class Map extends React.Component {
     },
     zoom: 1
   };
-
-  //Is run everytime the class
+  w;
   componentDidMount() {
     this.getCoordinates();
     this.interval = setInterval(this.getCoordinates, 3000);
